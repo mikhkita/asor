@@ -1,0 +1,413 @@
+@charset "utf-8";
+
+html,
+body {
+	
+}
+body {
+	min-width: 1024px;
+}
+a{
+
+}
+label.error{
+
+}
+input.error,textarea.error{
+
+}
+.fancybox-inner{
+
+}
+.bold{
+
+}
+.underline{
+
+}
+.white{
+
+}
+.b{
+
+}
+b{
+
+}
+.b-block{
+	width: 960px;
+}
+.b-absolute{
+
+}
+input::-webkit-input-placeholder {
+
+}
+input:-moz-placeholder {
+
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+
+}
+[class^="icon-"]:before, 
+[class*=" icon-"]:before  {
+
+
+
+}
+h2, h3, h4, h5, p{
+
+}
+h2{
+
+}
+h3{
+
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+input[type="text"]{
+
+}
+.b-btn{
+
+}
+.b-btn.one-line{
+
+}
+.b-purple-btn{
+
+}
+
+	.b-purple-btn b{
+
+	}
+	.b-purple-btn:hover{
+
+	}
+	.b-purple-btn:active{
+
+	}
+	.b-purple-btn.with-purple-border{
+
+	}
+		.b-purple-btn.with-purple-border:hover{
+
+		}
+		.b-purple-btn.with-purple-border:active{	
+
+		}
+.b-white-btn{
+
+}
+	.b-white-btn b{
+
+	}
+	.b-white-btn:hover{
+
+	}
+	.b-white-btn:active{
+
+	}
+.b-1{
+
+}
+	.b-1 .b-back-cont{
+
+	}
+		.b-1 .b-back{
+
+		}
+		.b-1 .b-back-cont svg{
+
+		}
+		.svg-sun{
+
+		}
+		.svg-balloon{
+
+		}
+		.svg-yeti{
+
+		}
+		.svg-yeti2{
+
+		}
+	.b-1 .b-block{
+
+	}
+		.b-1 .b-top{
+
+		}
+			.b-logo{
+
+			}
+			.b-top-menu{
+
+			}
+				.b-top-menu a{
+
+				}
+				.b-top-menu .b-menu-btn{
+
+				}
+					.b-top-menu .b-menu-btn span{
+
+					}
+				.b-top-phone{
+
+				}
+				.b-icon-phone:before{
+
+				}
+		.b-header{
+
+		}
+			.b-header-text{
+				max-width: 650px;
+			}
+				.b-header-text h1{
+					font-size: 50px;
+					line-height: 60px;
+				}
+				.b-header-text h3{
+					font-size: 24px;
+					line-height: 32px;
+				}
+					.svg-line{
+						display: none;
+					}
+				.b-header-text .b-btn{
+					
+				}
+.b-popup{
+
+}
+.b-popup-close{
+
+						
+}
+	.b-popup-close:hover{
+
+	}
+.b-quiz-popup{
+	width: 960px;
+}
+	.b-quiz{
+
+	}
+	.b-quiz-1{
+
+	}
+		.b-quiz h2{
+
+		}
+			.b-quiz h2 b{
+				
+			}
+		.b-radio-block{
+
+		}
+			.b-radio{
+
+			}
+				.b-radio input[type="radio"]{
+
+				}
+				.b-radio label{
+
+				}
+					.b-radio label:before{
+
+					}
+					.b-radio label:hover:before{
+
+					}
+					.b-radio input[type="radio"]:checked + label:before{
+
+					}
+					.b-radio label:after{
+
+					}
+					.b-radio input[type="radio"]:checked + label:after{
+
+					}
+					.b-radio label b{
+
+					}
+					.b-radio label span{
+
+					}
+						.b-radio input[type="radio"]:checked + label span{
+
+						}
+		.b-quiz-1 .b-btn{
+
+		}
+	.b-quiz-2{
+
+	}
+		.b-quiz-tour{
+
+		}
+			.b-quiz-tour h2{
+
+			}
+			.b-quiz h3{
+
+			}
+			.b-quiz h3.b-quiz-subtitle{
+
+			}
+			.b-quiz-price{
+
+			}
+				.b-quiz-old-price{
+
+				}
+					.b-quiz-old-price:after{
+
+					}
+					.b-quiz-sale{
+
+					}
+						.b-quiz-sale b{
+
+						}
+				.b-quiz-new-price{
+
+				}
+				.b-quiz-price h3{
+
+				}
+					.b-quiz-price h3 a{
+
+					}
+						.b-quiz-price h3 a:hover{
+
+						}
+			.b-quiz.b-mb-8{
+
+			}
+			.b-quiz ul{
+
+			}
+				.b-quiz ul li{
+
+				}
+					.b-quiz ul li:before{
+
+					}
+					.b-quiz ul li h3{
+
+					}
+		.b-quiz-form{
+
+		}
+	.b-quiz-form{
+
+	}
+		.b-quiz-form *{
+
+		}
+		.b-quiz-form h3{
+
+		}
+		.b-inputs{
+
+		}
+		.b-checkbox{
+			
+		}
+		.b-quiz-form .b-checkbox{
+
+		}
+			.b-checkbox input[type="checkbox"]{
+
+			}
+			.b-checkbox label{
+
+			}
+				.b-checkbox label span{
+
+				}
+				.b-checkbox label:before{
+
+				}
+				.b-checkbox label:after{
+
+				}
+				.b-checkbox label:hover:after{
+
+				}
+				.b-checkbox input[type="checkbox"]:checked + label:after{
+
+				}
+			.b-quiz-form .b-btn{
+
+			}
+			.b-quiz-form small{
+
+			}
+				.b-quiz-form small a{
+
+				}
+					.b-quiz-form small a:hover{
+
+					}
+.b-set-popup{
+	width: 960px;
+	/* background-size: 100%; */
+	background-position: 77% 0px;
+}
+	.b-set-popup h2{
+
+	}
+	.b-set{
+
+	}
+		.b-set-item{
+
+		}
+		.b-set-item:last-child{
+
+		}
+			.b-set-item .b-image{
+
+			}
+			.b-set-item .b-image-1{
+
+			}
+			.b-set-item .b-image-2{
+				background-position: 50% 54%;
+			}
+			.b-set-item .b-image-3{
+
+			}
+			.b-set-item h3{
+				font-size: 18px;
+			}
+				.b-set-item h3 b{
+
+				}
+	.b-set-popup .b-btn{
+
+	}
+.b-thanks{
+
+}
+	.b-thanks h2{
+
+	}
+	.b-thanks h3{
+
+	}

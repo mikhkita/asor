@@ -1,0 +1,40 @@
+Options -Indexes 
+ErrorDocument 404 /404.php
+
+<IfModule mod_php5.c>
+  php_flag allow_call_time_pass_reference 1
+  php_flag session.use_trans_sid off
+
+  #php_value display_errors 1
+
+  #php_value mbstring.internal_encoding UTF-8
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  Options +FollowSymLinks
+  RewriteEngine On
+
+  #RewriteCond %{HTTPS} !=on
+  #RewriteCond %{REQUEST_FILENAME} !^.*favicon.*
+  #RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+ 
+  #RewriteRule ^countries(.*)$ https://kru-god.ru/countries$1 [R=301,L]
+  #RewriteRule ^about(.*)$ https://kru-god.ru/about$1 [R=301,L]
+  #RewriteRule ^services(.*)$ https://kru-god.ru/services$1 [R=301,L]
+  #RewriteRule ^hot(.*)$ https://kru-god.ru/hot$1 [R=301,L]
+  #RewriteRule ^russia(.*)$ https://kru-god.ru/russia$1 [R=301,L]
+  #RewriteRule ^upload(.*)$ https://kru-god.ru/upload$1 [R=301,L]
+  #RewriteRule ^politics(.*)$ https://kru-god.ru/politics$1 [R=301,L]
+  #RewriteRule ^offers(.*)$ https://kru-god.ru/offers$1 [R=301,L]
+  #RewriteRule ^local(.*)$ https://kru-god.ru/local$1 [R=301,L]
+</IfModule>
+
+<IfModule mod_dir.c>
+  DirectoryIndex index.php index.html
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive on
+  ExpiresByType image/jpeg "access plus 3 day"
+  ExpiresByType image/gif "access plus 3 day"
+</IfModule>

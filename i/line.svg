@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="63px" height="201px" viewBox="0 0 63 201" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Line</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Роза-хутор" transform="translate(-378.000000, -612.000000)" stroke="#FFFFFF" stroke-width="3">
+            <g id="Group">
+                <path d="M439.013672,614.003906 C352.779297,623.123047 368.181641,735.984375 437.390625,811.160156 C435.139323,798.597656 434.013672,792.316406 434.013672,792.316406 L437.390625,811.160156 L417.894531,807.052734" id="Line"></path>
+            </g>
+        </g>
+    </g>
+</svg>

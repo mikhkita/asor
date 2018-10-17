@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="124px" height="32px" viewBox="0 0 124 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Роза-хутор-Copy" transform="translate(-730.000000, -353.000000)" fill="#805ABE">
+            <g id="Стоимость" transform="translate(590.000000, 352.000000)">
+                <g id="Скидка" transform="translate(140.000000, 0.000000)">
+                    <path d="M18.7513365,1 L122.000012,1 C123.104581,1 124.000012,1.8954305 124.000012,3 L124.000012,31.0000236 C124.000012,32.1045931 123.104582,33.0000236 122.000012,33.0000236 C122.000012,33.0000236 122.000012,33.0000236 122.000012,33.0000236 L18.7513362,33.0000002 C18.2669708,33.0000001 17.7990634,32.824222 17.4345039,32.5053079 L1.4307195,18.5053077 C0.599361005,17.778041 0.514977913,16.5145257 1.24224459,15.6831672 C1.30080861,15.6162211 1.36377337,15.5532563 1.4307195,15.4946923 L17.4345037,1.49469228 C17.7990633,1.17577803 18.2669709,1 18.7513365,1 Z" id="Rectangle-5"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
