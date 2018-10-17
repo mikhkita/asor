@@ -184,7 +184,7 @@ $version = 1;
 				<div class="b-top-menu">
 					<a href="#" class="b-menu-btn"><span></span>Меню</a>
 					<a href="tel:+79627786772" class="b-top-phone b-icon-phone">+7 (962) 778-67-72</a>
-					<a href="#b-popup-avia" class="b-btn b-transparent-btn fancy">Купить авиабилет</a>
+					<a href="#b-popup-avia" class="b-btn b-transparent-btn fancy">Купить авиабилеты</a>
 				</div>
 			</div>
 			<div class="b-header">
@@ -277,18 +277,18 @@ $version = 1;
 					<h4>Заполните форму и наши менеджеры свяжутся с вами в течение 15 минут</h4>
 					<div class="b-inputs clearfix">
 						<input type="text" class="ym-record-keys" name="name" placeholder="Ваше имя*" required>
-						<input type="text" class="ym-record-keys" name="phone" placeholder="Ваш телефон*" required>
-						<input type="text" class="ym-record-keys" name="city" placeholder="Город вылета*" required>
-						<input type="date" class="ym-record-keys" name="date" placeholder="Дата вылета*" required>
+						<input type="text" class="ym-record-keys right" name="phone" placeholder="Ваш телефон*" required>
+						<input type="text" class="ym-record-keys " name="city" placeholder="Город вылета*" required>
+						<input type="date" class="ym-record-keys right" name="date" placeholder="Дата вылета*" required>
 						<input type="text" class="ym-record-keys" name="count" placeholder="Количество человек*" required>
 						<div class="b-checkbox">
 							<input type="checkbox" id="business" name="business" value="Требуется подбор авиабилетов">
-							<label for="business">Нужны билеты бизнесс-класса</label>
+							<label for="business" class="right">Нужны билеты бизнесс-класса</label>
 						</div>
 					</div>
 					
 					<a href="#b-quiz-2" class="b-btn b-white-btn ajax"><b>Забронировать тур</b>и получить подарки</a>
-					<input type="hidden" name="subject" value="Бронирование тура"/>
+					<input type="hidden" name="subject" value="Заказ авиабилета"/>
 					<input type="submit" style="display:none;">
 					<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
 					<small>Отправляя запрос, вы подтверждаете <a href="https://kru-god.ru/politics/" target="_blank">согласие на обработку персональных данных</a></small>

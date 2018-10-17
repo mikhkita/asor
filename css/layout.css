@@ -471,11 +471,9 @@ input[type="date"]{
 			width: calc(50% - 13px);
 			float: left;
 		}
-			.b-quiz-form.avia input:nth-child(2n+1){
-				margin-right: 24px;	
-			}
 		.b-quiz-form.avia .b-checkbox label{
 			margin-top: 20px;
+			margin-right: 25px;
 		}
 		.b-quiz-form.avia .b-btn {
 			margin-top: 24px;
@@ -488,6 +486,7 @@ input[type="date"]{
 			vertical-align: middle;
 			width: calc(50% - 24px);
 			text-align: left;
+			margin-left: 2px;
 		}
 	.b-quiz{
 		background-position: 50% 0%;
