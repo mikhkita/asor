@@ -21,7 +21,7 @@
 	$from = "“Туры на Роза Хутор”";
 	$email_from = "robot@snowtrvl.ru";
 
-	$deafult = array("name"=>"Имя","phone"=>"Телефон", "email"=>"E-mail", "tour" => "Тур");
+	$deafult = array("name"=>"Имя","phone"=>"Телефон", "email"=>"E-mail", "tour" => "Тур", "city" => "Город вылета", "date" => "Дата вылета", "count" => "Количество человек", "business" => "Билеты бизнесс-класса");
 
 	$fields = array();
 

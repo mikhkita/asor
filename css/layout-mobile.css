@@ -96,7 +96,9 @@ input[type="text"]{
 .b-purple-btn{
 
 }
-
+	.b-1 .b-transparent-btn{
+		display: none;
+	}
 	.b-purple-btn b{
 		font-size: 22px;
 	}
@@ -161,7 +163,7 @@ input[type="text"]{
 				background-size: 73px;
 			}
 			.b-top-menu{
-
+			    margin-left: 28px;
 			}
 				.b-top-menu a{
 
@@ -361,6 +363,19 @@ input[type="text"]{
 		position: relative;
 		top: 2px;
 	}
+		#b-popup-avia{
+			background-color: none;
+		}
+		.b-quiz-form.avia{
+			width: 100%;
+			margin-right: 0px;
+			border-radius: 5px;
+			border-top-left-radius: 0px;
+			border-top-right-radius: 0px;
+			padding: 24px 24px 31px;
+			position: relative;
+			top: 2px;
+		}
 		.b-quiz-form *{
 
 		}
