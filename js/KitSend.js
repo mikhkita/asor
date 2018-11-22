@@ -199,7 +199,7 @@ $(document).ready(function(){
 					}
 
 					if( $this.attr("id") == "b-form-quiz" ){
-						$(".b-quiz").hide();
+						$this.find(".b-quiz").hide();
 						$("#b-quiz-1").show();
 					}
 

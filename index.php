@@ -18,7 +18,7 @@ $version = 1;
 	<meta name="description" content=''>
 
 	<? if( $mobile ): ?>
-		<meta name="viewport" content="width=375,minimum-scale=1,maximum-scale=1">
+		<meta name="viewport" content="width=375">
 	<? else: ?>
 		<meta name="viewport" content="width=1024,minimum-scale=1,maximum-scale=1">
 	<? endif; ?>
@@ -27,6 +27,8 @@ $version = 1;
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link rel="stylesheet" href="css/reset.css" type="text/css">
 	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css">
+	<link rel="stylesheet" href="css/slick-theme.css" type="text/css">
+	<link rel="stylesheet" href="css/slideout.css" type="text/css">
 	<link rel="stylesheet" href="css/KitAnimate.css?<?=$version?>" type="text/css">
 	<link rel="stylesheet" href="css/layout.css?<?=$version?>" type="text/css">
 
@@ -55,6 +57,17 @@ $version = 1;
 
 </head>
 <body>
+	<nav id="menu">
+		<header>
+			<h2 class="menu-header">Меню</h2>
+			<ul class="menu-wrap">
+				<li><a href="https://kru-god.ru/politics/" target="_blank"><h3>Политика конфиденциальности</h3></a></li>
+				<!-- <li><a href="#b-popup-avia" class="fancy b-menu-item"><h3>Купить авиабилеты</h3></a></li> -->
+			</ul>
+		</header>
+	</nav>
+	<main id="panel">
+    	<header>
 	<div class="b b-1">
 		<div class="b-back-cont">
 			<svg viewBox="0 0 312 161" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-sun">
@@ -181,11 +194,21 @@ $version = 1;
 		<div class="b-block">
 			<div class="b-top clearfix">
 				<a href="https://rosa.snowtrvl.ru/" class="b-logo"></a>
-				<div class="b-top-menu">
+				<!-- <div class="b-top-menu">
 					<a href="#" class="b-menu-btn"><span></span>Меню</a>
 					<a href="tel:+79627786772" class="b-top-phone b-icon-phone">+7 (962) 778-67-72</a>
-					<a href="#b-popup-avia" class="b-btn b-transparent-btn fancy">Купить авиабилеты</a>
-				</div>
+				</div> -->
+				<ul class="b-top-menu">
+					<li><a href="#" class="b-menu-btn"><p>Меню</p></a>
+						<ul class="b-menu">
+							<li><a href="https://kru-god.ru/politics/" target="_blank" class="b-menu-item">Политика конфиденциальности</a></li>
+							<li><a href="#b-popup-avia" class="fancy b-menu-item">Купить авиабилеты</a></li>
+						</ul>
+					</li>
+					<li><a href="tel:+79627786772" class="b-top-phone b-icon-phone">+7 (962) 778-67-72</a></li>
+					<p class="b-mobile-menu">Меню</p>
+					<button class="toggle-button"></button>
+				</ul>
 			</div>
 			<div class="b-header">
 				<div class="b-header-text">
@@ -195,6 +218,174 @@ $version = 1;
 				</div>	
 			</div>
 		</div>
+	</div>
+	<div class="b b-2">
+		<div class="b-block">
+			<h2>Роза Хутор – <b>лучший горнолыжный</b> курорт&nbsp;России</h2>
+			<div class="b-advantages justify clearfix">
+				<div class="b-advantage advantage-1">
+					<img src="i/num-1.svg" class="b-advantage-number">
+					<h3><b>подъемников</b></h3>
+					<h3 class="b-sign">которыми могут пользоваться до 20 000 человек в сутки</h3>
+				</div>
+				<div class="b-advantage advantage-2">
+					<img src="i/num-2.svg" class="b-advantage-number">
+					<h3><b>дней в году</b></h3>
+					<h3 class="b-sign">можно кататься на лыжах благодаря системе оснежнения</h3>
+				</div>
+				<div class="b-advantage advantage-3">
+					<img src="i/num-3.svg" class="b-advantage-number">
+					<h3><b>километра</b></h3>
+					<h3 class="b-sign">протяженность трасс различного уровня – от зеленых до черных</h3>
+				</div>
+			</div>
+			<h3 class="b-main-advantage">Роза Хутор – это современный горный курорт мирового уровня, расположенный в районе Адлера. Теплая погода, обилие снега и южное солнце – <b>идеальное сочетание для любителей покатать</b> на доске или лыжах.</h3>
+		</div>
+		<div class="b-gradient"></div>
+	</div>
+	<div class="b b-3">
+		<div class="b-block">
+			<h2><b>Хочешь покорить</b> сочинские горные вершины? Поехали вместе с командой <em>Snow&nbsp;Travel!</em></h2>
+			<div class="b-woman"></div>
+			<p>С нами тебе не придется думать о том где жить, что есть, и «блин, я плохо катаюсь, где гора попроще?». Мы и отель подберем, и местность покажем, и вечеринку устроим, и все это еще на фото запечатлим!</p>	
+			<a href="#b-popup-quiz" class="b-btn b-purple-btn with-purple-border fancy"><b>Забронировать тур</b>со скидкой 15% и забрать подарок</a>
+		</div>
+	</div>
+	<div class="b b-4">
+		<div class="b-cost-bg"></div>
+		<div class="b-block">
+			<h2>Что <b>входит в стоимость?</b></h2>
+			<div class="b-costs justify">
+				<div class="b-cost cost-1">
+					<img src="i/cost-1.png" class="b-advantage-number">
+					<div class="b-text-wrapper">
+						<h3><b>Подбор авиабилетов</b></h3>
+						<h3 class="b-sign">до Адлера</h3>
+					</div>
+				</div>
+				<div class="b-cost cost-2">
+					<img src="i/cost-2.png" class="b-advantage-number">
+					<div class="b-text-wrapper">
+						<h3><b>Трансфер</b></h3>
+						<h3 class="b-sign">«Адлер – Роза Хутор – Адлер»</h3>
+					</div>
+				</div>
+				<div class="b-cost cost-3">
+					<img src="i/cost-3.png" class="b-advantage-number">
+					<div class="b-text-wrapper">
+						<h3><b>8 дней проживания</b></h3>
+						<h3 class="b-sign">в гостинице «AYS Let it Snow»</h3>
+					</div>
+				</div>
+				<div class="b-cost cost-4">
+					<img src="i/cost-4.png" class="b-advantage-number">
+					<div class="b-text-wrapper">
+						<h3><b>Фотограф и тур-гид</b></h3>
+						<h3 class="b-sign">с программой</h3>
+					</div>
+				</div>
+				<div class="b-cost cost-5">
+					<img src="i/cost-5.png" class="b-advantage-number">
+					<div class="b-text-wrapper">
+						<h3><b>Скидка 20%</b></h3>
+						<h3 class="b-sign">на подъемники</h3>
+					</div>
+				</div>
+			</div>
+			<h3 class="b-main-advantage">А если забронировать тур прямо сейчас, то вы не просто получите море позитива, но и <b>сэкономите 15%&nbsp;от&nbsp;стоимости&nbsp;тура.</b><p class="lol">+</p>
+			Наш тур-гид Андрей проведет для вас личную экскурсию в один из дней бесплатно!</h3>
+		</div>
+		<div class="b-gradient-2"></div>
+	</div>
+	<div class="b b-5">
+		<div class="b-block">
+			<h2 class="b-not-quiz"><b>Вы можете сэкономить 15%</b> от стоимости тура, за счет раннего бронирования</h2>
+			<form action="kitsend.php" data-goal="TOUR" method="POST" id="b-form-quiz-1">
+			<div class="b-quiz b-quiz-1" id="b-quiz-3">
+				<h2><b>Когда</b> вы хотели бы отправиться на курорт?</h2>
+				<div class="b-radio-block">
+					<div class="b-radio">
+						<input type="radio" name="tour" id="tour-1-1" value="Новогодний тур. 28 декабря – 4 января" data-in="28 декабря с 14:00" data-out="4 января до 12:00" data-from="28 декабря" data-to="4 января" data-price="27 300" data-oldprice="32 100" checked>
+						<label for="tour-1-1">
+							<b>Новогодний тур.</b> <span>28 декабря – 4 января</span>
+						</label>
+					</div>
+					<div class="b-radio">
+						<input type="radio" name="tour" id="tour-2-1" value="Тур на RosaFest. 27 января – 3 февраля" data-in="27 января с 14:00" data-out="3 февраля до 12:00" data-from="27 января" data-to="3 февраля" data-price="от 14 800" data-oldprice="17 400">
+						<label for="tour-2-1">
+							<b>Тур на RosaFest.</b> <span>27 января – 3 февраля</span>
+						</label>
+					</div>
+					<div class="b-radio">
+						<input type="radio" name="tour" id="tour-3-1" value="Тур в пик сезона. 17 февраля – 24 февраля" data-in="17 февраля с 14:00" data-out="24 февраля до 12:00" data-from="17 февраля" data-to="24 февраля" data-price="23 300" data-oldprice="27 400">
+						<label for="tour-3-1">
+							<b>Тур в пик сезона.</b> <span>17 февраля – 24 февраля</span>
+						</label>
+					</div>
+				</div>
+				<a href="#b-quiz-4" class="b-btn b-purple-btn with-purple-border b-quiz-next"><b>Выбрать дату</b>и перейти к заполнению заявки</a>
+			</div>
+			<div class="b-quiz b-quiz-2 clearfix" id="b-quiz-4" style="display: none;">
+				<div class="b-quiz-tour left">
+					<h2><b>Новогодний тур</b></h2>
+					<h3 class="b-quiz-subtitle">на «Роза Хутор»</h3>
+					<div class="b-quiz-price">
+						<div class="b-quiz-old-price">
+							<span class="b-quiz-oldprice">32 100 руб.</span>
+							<span class="b-quiz-sale">Скидка <b>15%</b></span>
+						</div>
+						<div class="b-quiz-new-price"><b class="b-quiz-newprice">27 300 руб.</b></div>
+						<!-- <h3><a href="#b-set-popup" class="fancy">Что входит в стоимость?</a></h3> -->
+					</div>
+					<div class="b-desktop-only">
+						<h3><b>Заезд:</b> <span class="b-tour-in">28 декабря с 14:00</span></h3>
+						<h3><b>Выезд:</b> <span class="b-tour-out">4 января до 12:00</span></h3>
+						<h3 class="b-mb-8"><b>Оплата:</b></h3>
+						<ul>
+							<li><h3>Наличный и безналичный расчет</h3></li>
+							<li><h3>Кредит/рассрочка</h3></li>
+							<li><h3>Карта халва</h3></li>
+						</ul>
+						<h3><a href="#b-quiz-3" class="b-quiz-back">Выбрать другой тур</a></h3>
+					</div>
+					<div class="b-mobile-only">
+						<h3><b>c <span class="b-tour-from">28 декабря</span></b> по <span class="b-tour-to">4 января</span></h3>
+						<h3><a href="#b-quiz-3" class="b-quiz-back">Выбрать другой тур</a></h3>
+					</div>
+				</div>
+				<div class="b-quiz-form right">
+					<h3>Заполните форму ниже и получите <b>скидку 20%</b> на подъемники + экскурсию в подарок!</h3>
+					<div class="b-inputs">
+						<input type="text" class="ym-record-keys" name="name" placeholder="Ваше имя*" required>
+						<input type="text" class="ym-record-keys" name="phone" placeholder="Ваш телефон*" required>
+					</div>
+					<div class="b-checkbox">
+						<input type="checkbox" id="avia" name="avia" value="Требуется подбор авиабилетов">
+						<label for="avia">Требуется подбор авиабилетов<span>бесплатно</span></label>
+					</div>
+					<a href="#b-quiz-4" class="b-btn b-white-btn ajax"><b>Забронировать тур</b>и получить подарки</a>
+					<input type="hidden" name="subject" value="Бронирование тура"/>
+					<input type="submit" style="display:none;">
+					<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
+					<small>Отправляя запрос, вы подтверждаете <a href="https://kru-god.ru/politics/" target="_blank">согласие на обработку персональных данных</a></small>
+				</div>
+			</div>
+		</form>
+		</div>
+		</div>
+		<div class="b-footer">
+			<div class="b-block clearfix">
+				<div class="b-footer-left">
+					<a href="tel:83822909303" class="b-footer-phone">+7 3822 909-303</a>
+					<p class="b-copyright">Туры на «Роза хутор» Snow Travel © 2018</p>
+				</div>
+				<div class="b-footer-right">
+					<p class="redder">Разработка сайта: redder.pro</p>
+				</div>
+			</div>
+		</div>
+		</header>
+    </main>
 	</div>
 	<div style="display:none;">
 		<a href="#b-popup-error" class="b-error-link fancy" style="display:none;"></a>
@@ -234,7 +425,6 @@ $version = 1;
 								<span class="b-quiz-sale">Скидка <b>15%</b></span>
 							</div>
 							<div class="b-quiz-new-price"><b class="b-quiz-newprice">27 300 руб.</b></div>
-							<h3><a href="#b-set-popup" class="fancy">Что входит в стоимость?</a></h3>
 						</div>
 						<div class="b-desktop-only">
 							<h3><b>Заезд:</b> <span class="b-tour-in">28 декабря с 14:00</span></h3>
@@ -245,13 +435,15 @@ $version = 1;
 								<li><h3>Кредит/рассрочка</h3></li>
 								<li><h3>Карта халва</h3></li>
 							</ul>
+							<h3><a href="#b-quiz-1" class="b-quiz-back">Выбрать другой тур</a></h3>
 						</div>
 						<div class="b-mobile-only">
 							<h3><b>c <span class="b-tour-from">28 декабря</span></b> по <span class="b-tour-to">4 января</span></h3>
+							<h3><a href="#b-quiz-1" class="b-quiz-back">Выбрать другой тур</a></h3>
 						</div>
 					</div>
 					<div class="b-quiz-form right">
-						<h3><b>Получите скидку 20% на подъемники</b> и экскурсию в подарок, забронировав тур заранее</h3>
+						<h3><b>Получите скидку 15% на подъемники</b> и экскурсию в подарок, забронировав тур заранее</h3>
 						<div class="b-inputs">
 							<input type="text" class="ym-record-keys" name="name" placeholder="Ваше имя*" required>
 							<input type="text" class="ym-record-keys" name="phone" placeholder="Ваш телефон*" required>
@@ -342,6 +534,9 @@ $version = 1;
 	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js/mask.js"></script>
 	<script type="text/javascript" src="js/KitAnimate.js"></script>
+	<script type="text/javascript" src="js/fastclick.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/slideout.js"></script>
 	<script type="text/javascript" src="js/KitSend.js?<?=$version?>"></script>
 	<script type="text/javascript" src="js/main.js?<?=$version?>"></script>
 

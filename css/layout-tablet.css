@@ -364,6 +364,9 @@ input[type="text"]{
 					.b-quiz-form small a:hover{
 
 					}
+.b-gradient-2{
+	display: none;
+}
 .b-set-popup{
 	width: 960px;
 	/* background-size: 100%; */
@@ -410,4 +413,7 @@ input[type="text"]{
 	}
 	.b-thanks h3{
 
+	}
+	.b-3 .b-block{
+		padding-left: 300px;
 	}

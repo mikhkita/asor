@@ -86,7 +86,13 @@ $(document).ready(function(){
 
         loadImages( desktop );
     }
-
+    if (isMobile) {
+        // $(".b-advantages").slick();
+        $(".b-advantages").slick({
+        autoplay: true
+    });
+    }
+   
     function loadImages(array){
         for( var i in array ){
             var items = array[i],
@@ -151,9 +157,16 @@ $(document).ready(function(){
         });
     }
 
-    $(".b-quiz-next").click(function(){
+    $(".b-quiz-back").click(function(){
         var $quiz = $(this).parents(".b-quiz");
         $(".b-quiz").hide();
+        $( $(this).attr("href") ).show();
+        return false;
+    });
+
+    $(".b-quiz-next").click(function(){
+        var $quiz = $(this).parents(".b-quiz");
+        $($quiz).hide();
         $( $(this).attr("href") ).show();
 
         if( $(this).attr("href") == "#b-quiz-2" ){
@@ -172,6 +185,23 @@ $(document).ready(function(){
             if( !isMobile ){
                 $( $(this).attr("href") ).find("input").eq(0).focus();
             }
+        };
+         if( $(this).attr("href") == "#b-quiz-4" ){
+            var selected = $quiz.find("input[name='tour']:checked"),
+                name = selected.val().split(".").shift();
+
+            $("#b-quiz-4 h2 b").text( name );
+            $(".b-tour-in").text( selected.attr("data-in") );
+            $(".b-tour-out").text( selected.attr("data-out") );
+            $(".b-tour-from").text( selected.attr("data-from") );
+            $(".b-tour-to").text( selected.attr("data-to") );
+            $(".b-quiz-newprice").text( selected.attr("data-price") + " руб." );
+            $(".b-quiz-oldprice").text( selected.attr("data-oldprice") + " руб." );
+
+
+            if( !isMobile ){
+                $( $(this).attr("href") ).find("input").eq(0).focus();
+            }
         }
         return false;
     });
@@ -179,8 +209,77 @@ $(document).ready(function(){
     customHandlers["quizClose"] = function(){
         $(".b-quiz").hide();
         $("#b-quiz-1").show();
-    }
+        $("#b-quiz-3").show();
+    };
 
+    $( ".b-top-menu .b-menu-btn" ).click(function(){
+        if ($( ".b-menu" ).hasClass( "show-m" )){
+            $( ".b-menu" ).removeClass( "show-m" );
+        } else {
+            $( ".b-menu" ).addClass( "show-m" )
+        }
+        return false;
+    });
+
+     $( ".b-menu a" ).click(function(){
+        if ($( ".b-menu" ).hasClass( "show-m" )){
+            $( ".b-menu" ).removeClass( "show-m" );
+        };
+    });
+     $(document).on('click', function(e){
+        var container = $('.b-menu');
+        if (container.has(e.target).length === 0){
+            container.removeClass("show-m");
+        }
+    });
+
+var slideout = new Slideout({
+      'panel': document.getElementById('panel'),
+      'menu': document.getElementById('menu'),
+      'padding': 250,
+      'tolerance': 70,
+      'side': 'left',
+      'touch': false
+    }); 
+$('#menu').css('display','block');
+$('#menu').css('opacity','0');
+    function close(eve) {
+    eve.preventDefault();
+    slideout.close();
+    }
+    slideout
+        .on('beforeopen', function() {
+          $(" #panel ").addClass("panel-open");
+          $('#menu').css('opacity','1');
+        })
+        .on('open', function() {
+           this.panel.addEventListener('click', close);
+        })
+        .on('beforeclose', function() {
+          $(" #panel ").removeClass("panel-open");
+          this.panel.removeEventListener('click', close);
+           $('#menu').css('opacity','0');
+        });
+    slideout.once('open', slideout._initTouchEvents);
+    slideout.on('open', slideout.enableTouch);
+    slideout.on('close', slideout.disableTouch);
+    document.querySelector('.toggle-button').addEventListener('click', function() {
+    slideout.toggle();
+    });
+    document.querySelector('.b-mobile-menu').addEventListener('click', function() {
+    slideout.toggle();
+    });
+
+    if (isMobile) {
+        $(".toggle-button, .b-mobile-menu").bind('touchend', function(e) {
+            e.preventDefault();
+            $(this).click();
+        });
+    };
+
+    // $(function() {
+    //     FastClick.attach(document.body);
+    // });
     // $(".b-step-slider").slick({
     //     dots: true,
     //     slidesToShow: 1,
