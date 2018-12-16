@@ -86,7 +86,7 @@ $(document).ready(function(){
 
         loadImages( desktop );
     }
-    if (isMobile) {
+    if (!isDesktop) {
         // $(".b-advantages").slick();
         $(".b-advantages").slick({
         autoplay: true
@@ -141,11 +141,11 @@ $(document).ready(function(){
         if( height/width > 1144/2048 ){
             $(".b-back, .b-back-cont").css({
                 width : "auto",
-                height : height + (1144 - height)*zoom
+                height : height + (1430 - height)*zoom
             });
         }else{
             $(".b-back, .b-back-cont").css({
-                width : width + (2048 - width)*zoom,
+                width : width + (2560 - width)*zoom,
                 height : "auto"
             });
         }
@@ -159,14 +159,14 @@ $(document).ready(function(){
 
     $(".b-quiz-back").click(function(){
         var $quiz = $(this).parents(".b-quiz");
-        $(".b-quiz").hide();
+        $quiz.hide();
         $( $(this).attr("href") ).show();
         return false;
     });
 
     $(".b-quiz-next").click(function(){
         var $quiz = $(this).parents(".b-quiz");
-        $($quiz).hide();
+        $quiz.hide();
         $( $(this).attr("href") ).show();
 
         if( $(this).attr("href") == "#b-quiz-2" ){

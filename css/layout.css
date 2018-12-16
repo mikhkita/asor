@@ -475,6 +475,32 @@ input[type="date"]{
 	padding-bottom: 60px;
 	border-radius: 5px;
 }
+.b-text{
+
+}
+	.b-text p,
+	.b-text li{
+		font-size: 18px;
+		line-height: 26px;
+	}
+	.b-text ul{
+
+	}
+	.b-text img{
+		max-width: 100%;
+	}
+	.b-text li{
+
+	}
+	.b-text b{
+		font-family: "MuseoSansCyrl-900";
+	}
+	.b-text h3{
+
+	}
+.b-text-popup{
+	max-width: 820px;
+}
 .b-popup-close{
 	font-size: 20px;
 	padding-right: 1px;
@@ -1042,6 +1068,7 @@ input[type="date"]{
 	padding-top: 110px;
 	padding-bottom: 113px;
 	position: relative;
+	overflow: hidden;
 }
 	.b-cost-bg{
 		display: inline-block;
@@ -1120,8 +1147,10 @@ input[type="date"]{
 					}
 .b-5{
 	padding-top: 90px;
-	padding-bottom: 84px;
+	padding-bottom: 34px;
 	background-image: url(../i/back4.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 	.b-5 .b-not-quiz{
 		display: inline-block;

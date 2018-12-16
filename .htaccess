@@ -14,9 +14,9 @@ ErrorDocument 404 /404.php
   Options +FollowSymLinks
   RewriteEngine On
 
-  #RewriteCond %{HTTPS} !=on
-  #RewriteCond %{REQUEST_FILENAME} !^.*favicon.*
-  #RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{REQUEST_FILENAME} !^.*favicon.*
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
  
   #RewriteRule ^countries(.*)$ https://kru-god.ru/countries$1 [R=301,L]
   #RewriteRule ^about(.*)$ https://kru-god.ru/about$1 [R=301,L]
