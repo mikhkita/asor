@@ -300,8 +300,79 @@ $version = 3;
 			</div>
 			<h3 class="b-main-advantage">А если забронировать тур прямо сейчас, то вы не просто получите море позитива, но и <b>сэкономите 15%&nbsp;от&nbsp;стоимости&nbsp;тура.</b><p class="lol">+</p>
 			Наш тур-гид Андрей проведет для вас личную экскурсию в один из дней бесплатно!</h3>
+			<a href="#b-popup-quiz" class="b-btn b-purple-btn with-purple-border fancy"><b>Узнать подробнее</b>о том, что входит в тур</a>
 		</div>
 		<div class="b-gradient-2"></div>
+	</div>
+	<div class="b b-4-1">
+		<div class="b-block">
+			<h2><b>Тургиды</b>, которых вы полюбите</h2>
+			<div class="b-guides-container">
+				<div class="b-guide">
+					<div class="b-guide-circle b-guide-man">
+						<div class="b-guide-photo"></div>
+					</div>
+					<div class="b-guide-info">
+						<h2>Андрей Кобяков</h2>
+						<h3>@hommentiy</h3>
+						<p>Тургид, фотограф, видеомонтажер, инструктор по сноуборду и просто замечательный человек. Зарядит своей энергетиков и развеселит своим чувством юмора.</p>
+					</div>
+				</div>
+				<div class="b-guide">
+					<div class="b-guide-info">
+						<h2>Дарья Ларина</h2>
+						<h3>@olya_photo_ro</h3>
+						<p>Девочка-красавица. Заряжает позитивом всех, кто находится рядом, не щадя никого. Обожает свою доску и любит то, чем занимается. Всегда придет на помощь и и подарит свою улыбку.</p>
+					</div>
+					<div class="b-guide-circle b-guide-woman">
+						<div class="b-guide-photo"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="b b-4-2">
+		<div class="b-block">
+			<h2>А еще в нашей команде есть прекрасная <b>фотограф Оля</b></h2>
+			<h3>Она создаст для вас воспоминания, которые не поблекнут!</h3>
+		</div>
+		<div class="b-slick">
+			<img src="i/photo-2.jpg">
+			<img src="i/photo-1.jpg">
+			<img src="i/photo-3.jpg">
+			<img src="i/photo-3.jpg">
+		</div>
+	</div>
+	<div class="b b-4-3">
+		<div class="b-block">
+			<h2>Не уверены? Почитайте <b>отзывы о наших путешествиях</b></h2>
+			<div class="b-review-container">
+				<div class="b-review-slick">
+					<div class="b-review-item b-review-man">
+						<div class="b-review-human"></div>
+						<div class="b-review-block">
+							<div class="b-review">
+								<div class="b-review-photo"></div>
+								<h3>Игорь</h3>
+								<p>Поездка очень понравилась. А именно: Всё было организованно, доброжелательные люди в туре! Ожидания оправдались на 100%, особенно Ярослав, спасибо тебе! Обязательно поедем в следующий раз</p>
+							</div>
+							<a href="#" class="b-btn"><b>Следующий отзыв</b></a>
+						</div>
+					</div>
+					<div class="b-review-item b-review-woman">
+						<div class="b-review-human"></div>
+						<div class="b-review-block">
+							<div class="b-review">
+								<div class="b-review-photo"></div>
+								<h3>София Билль</h3>
+								<p>Поездка на Роза Хутор лучшее, что случалось со мной! Все было на высшем уровне от моей затаившейся идеи поехать покорять новые вершины, до момента нашего последнего вечера вместе. Атмосфера была непередаваемая и это проявлялось даже в обычных мелочах. Организация и все, что с этим связано были на высшем уровне. Если вы все ещё думаете, ехать или нет, то ответ конечно же ДА!!! Спасибо Gesh Tour и Snow TRVL за эту возможность прикоснуться к прекрасному.</p>
+							</div>
+							<a href="#" class="b-btn"><b>Следующий отзыв</b></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div class="b b-5">
 		<div class="b-block">

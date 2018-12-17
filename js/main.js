@@ -270,6 +270,35 @@ $('#menu').css('opacity','0');
     slideout.toggle();
     });
 
+    $('.b-slick').slick({
+        centerMode: true,
+        variableWidth: true,
+        slidesToShow: 3,
+        prevArrow: '<button type="button" class="photo-arrow slick-prev slick-arrow icon-arrow-left"></button>',
+        nextArrow: '<button type="button" class="photo-arrow slick-next slick-arrow icon-arrow-right"></button>',
+        responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+                variableWidth: false,
+                slidesToShow: 1
+              }
+            },
+          ]
+    });
+
+    $('.b-review-slick').slick({
+         fade: true,
+         speed: 500,
+         arrows: false,
+    });
+
+    $('.b-review-slick .b-btn').on('click', function(){
+        $('.b-review-slick').slick('slickNext');
+        return false;
+    });
+
     if (isMobile) {
         $(".toggle-button, .b-mobile-menu").bind('touchend', function(e) {
             e.preventDefault();

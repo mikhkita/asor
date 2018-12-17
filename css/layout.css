@@ -161,7 +161,7 @@ input:autofill:focus{
 }
 [class^="icon-"]:before, 
 [class*=" icon-"]:before  {
-	font-family: 'icomoon' !important;
+	font-family: 'icomoon' !important;b-4
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
@@ -1069,6 +1069,8 @@ input[type="date"]{
 	padding-bottom: 113px;
 	position: relative;
 	overflow: hidden;
+	background: #fff;
+    background: linear-gradient(to bottom, #fff, #FBFCFE);
 }
 	.b-cost-bg{
 		display: inline-block;
@@ -1145,12 +1147,283 @@ input[type="date"]{
 						left: -6px;
 						top: 19px;
 					}
+		.b-4 .b-btn{
+			margin-top: 60px;
+		}
+.b-4-1{
+	padding-top: 26px;
+	padding-bottom: 3px;
+	background-image: url(../i/back4-1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+	.b-guides-container{
+		 margin-top: 120px;
+	}
+		.b-guide{
+			margin-bottom: 62px;
+		}
+			.b-guide-circle{
+				width: 490px;
+				height: 490px;
+				border-radius: 100%;
+				background-image: url(../i/guide-back.jpg);
+				background-repeat: no-repeat;
+			    background-position: bottom;
+				background-color: #fff;
+				display: inline-block;
+				position: relative;
+				vertical-align: middle;
+				box-shadow: 0 25px 35px 0 rgba(57,54,80,0.19);
+			}
+				.b-guide-photo{
+					background-repeat: no-repeat;
+					background-size: cover;
+					position: absolute;
+					left: 50%;
+					bottom: 0;
+					-webkit-transform: translateX(-50%);
+					-ms-transform: translateX(-50%);
+					-o-transform: translateX(-50%);
+					transform: translateX(-50%);
+				}
+					.b-guide-man{
+						margin-right: 107px;
+					}
+					.b-guide-woman{
+						margin-left: 107px;
+					}
+					.b-guide-man .b-guide-photo{
+						background-image: url(../i/man-guide.png);
+						width: 348px;
+						height: 538px;
+					}
+					.b-guide-woman .b-guide-photo{
+						background-image: url(../i/woman-guide.png);
+						width: 365px;
+						height: 537px;
+					}
+		.b-guide-info{
+			display: inline-block;
+			width: 543px;
+			text-align: left;
+			vertical-align: middle;
+		}
+			.b-guide h2{
+				font-size: 40px;
+				line-height: 50px;
+				color: #373737;
+				font-family: 'MuseoSansCyrl-900';
+	
+			}
+			.b-guide h3{
+				font-size: 32px;
+				line-height: 50px;
+				color: #9B9B9B;
+				font-family: 'MuseoSansCyrl-500';
+	
+			}
+			.b-guide p{
+				color: #373737;
+				font-size: 24px;
+				line-height: 36px;
+				margin-top: 30px;
+			}
+.b-4-2{
+	padding-top: 70px;
+}
+	.b-4-2 h2{
+		font-family: MuseoSansCyrl-300;
+		font-size: 48px;
+		color: #373737;
+		text-align: center;
+		line-height: 56px;
+	}
+	.b-4-2 h3{
+		font-family: MuseoSansCyrl-300;
+		font-size: 32px;
+		color: #373737;
+		text-align: center;
+		line-height: 42px;
+		position: relative;
+		display: inline-block;
+		margin-top: 30px;
+	}
+	.b-4-2 h3:after{
+		right: -45px;
+		top: 20px;
+		content: "";
+		position: absolute;
+		width: 33px;
+		height: 84px;
+		background-image: url('../i/b-4-2-line.svg');
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.b-slick{
+		position: relative;
+		margin-top: 80px;
+	}
+		.b-slick .slick-track{
+			line-height: 0;
+		}
+		.b-slick .slick-slide{
+			-webkit-transition: filter .5s;
+			-o-transition: filter .5s;
+			transition: filter .5s;
+		}
+		.b-slick .slick-slide:not(.slick-current){
+			filter: grayscale(1);
+		}
+		.b-slick img{
+			width: 967px;
+		}
+			.photo-arrow{
+				-webkit-transition: .2s background-color;
+				-o-transition: .2s background-color;
+				transition: .2s background-color;
+				background-position: 50% 50%;
+				width: 970px;
+				height: 100%;
+			}
+			.photo-arrow.slick-prev{
+				left: calc(50% - 1453px);
+			}
+				.photo-arrow.slick-prev:hover{
+					background-color: rgba(0,0,0,0.15);
+				}
+			.photo-arrow.slick-next{
+				left: calc(50% + 483px);
+			}
+				.photo-arrow.slick-next:hover{
+					background-color: rgba(0,0,0,0.15);
+				}
+			.photo-arrow.slick-prev:before{
+			    left: calc(100% - 50px);
+				top: 50%;
+				background-image: url('../i/left-arrow-photo.svg');
+			}
+			.photo-arrow.slick-next:before{
+			    right: calc(100% - 50px);
+				top: 50%;
+				background-image: url('../i/left-arrow-photo.svg');
+				-webkit-transform: rotate(180deg);
+				-ms-transform: rotate(180deg);
+				-o-transform: rotate(180deg);
+				transform: rotate(180deg);
+			}
+.b-4-3{
+	padding-top: 110px;
+	background-image: url('../i/back4-3.jpg');
+	background-size: cover;
+	background-position: 50% 40px;
+	background-repeat: no-repeat;
+}
+	.b-4-3 h2{
+		margin-bottom: 42px;
+	}
+	.b-review-container{
+		
+	}
+		.b-review-slick{
+
+		}
+			.b-review-item{
+				display: inline-block;
+			}
+				.b-review-human{
+					display: inline-block;
+					background-size: cover;
+					background-position: top;
+					background-repeat: no-repeat;
+					vertical-align: middle;
+					margin-right: 13px;
+				}
+				.b-review-man .b-review-human{
+					width: 610px;
+					height: 1080px;
+					background-image: url('../i/review-man.png');
+				}
+				.b-review-woman .b-review-human{
+					width: 610px;
+					height: 1080px;
+					background-image: url('../i/review-woman.png');
+				}
+				.b-review-block{
+					width: 520px;
+					display: inline-block;
+					vertical-align: middle;
+				}
+					.b-review{
+						background-color: #fff;
+						padding: 30px 30px 32px 47px;
+						text-align: left;
+						border-radius: 10px;
+					}
+						.b-review-photo{
+							width: 95px;
+							height: 95px;
+							border-radius: 100%;
+							display: inline-block; 
+							vertical-align: middle;
+							margin-right: 24px;
+						}
+						.b-review-man .b-review-photo{
+							background-image: url('../i/man-small-photo.jpg');
+						    background-position: 37% 42%;
+						}
+						.b-review-woman .b-review-photo{
+							background-image: url('../i/woman-small-photo.jpg');
+						    background-position: 43% 30%;
+						}
+						.b-review h3{
+							font-family: MuseoSansCyrl-900;
+							font-size: 32px;
+							color: #373737;
+							display: inline-block;
+							vertical-align: middle;
+							max-width: calc(100% - 110px);
+						}
+						.b-review p{
+							font-family: MuseoSansCyrl-300;
+							font-size: 24px;
+							color: #373737;
+							line-height: 42px;
+							margin-top: 22px;
+						}
+					.b-review-item .b-btn{
+						margin-top: 74px;
+						background-color: #fff;
+						padding: 25px 88px 25px 51px;
+						font-size: 28px;
+						color: #4A4A4A;
+						text-align: center;
+					    box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.10);
+					    -webkit-transition: background-color 150ms ease-out, box-shadow 150ms ease-out;
+					    -moz-transition: background-color 150ms ease-out, box-shadow 150ms ease-out;
+					    -ms-transition: background-color 150ms ease-out, box-shadow 150ms ease-out;
+					    -o-transition: background-color 150ms ease-out, box-shadow 150ms ease-out;
+					    transition: background-color 150ms ease-out, box-shadow 150ms ease-out;
+					    position: relative;
+					}
+					.b-review-item .b-btn:after{
+						content: '';
+						position: absolute;
+						background-image: url('../i/review-arrow.svg');
+						width: 18px;
+						height: 28px;
+					    right: 42px;
+					}
+					.b-review-item .b-btn:hover{
+						box-shadow: 0px 0px 0px 15px rgba(0,0,0,0.10);
+					}
 .b-5{
 	padding-top: 90px;
 	padding-bottom: 34px;
 	background-image: url(../i/back4.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: 50% 60px;
 }
 	.b-5 .b-not-quiz{
 		display: inline-block;
@@ -1477,4 +1750,60 @@ input[type="date"]{
 			left: -6px;
 			top: 19px;
 		}
+	.b-guides-container{
+	    margin-top: 70px;
+	}
+		.b-guide h2{
+			font-size: 32px;
+		}
+		.b-guide h3{
+			font-size: 24px;
+			line-height: 36px;
+		}
+		.b-guide p{
+			font-size: 20px;
+	    	line-height: 28px;
+		    margin-top: 12px;
+		}
+		.b-guide-circle{
+			width: 300px;
+			height: 300px;
+		    background-position: bottom;
+	   		background-size: contain;
+		}
+			.b-guide-man{
+				margin-right: 65px;
+			}
+			.b-guide-woman{
+				margin-left: 65px;
+			}
+				.b-guide-man .b-guide-photo{
+				    width: 203px;
+					height: 311px;
+				}
+				.b-guide-woman .b-guide-photo{
+				    width: 217px;
+			    	height: 320px;
+				}
+	.b-4-3{
+		padding-top: 80px;
+	}
+	.b-review-man .b-review-human{
+        width: 400px;
+    	height: 695px;
+	}
+	.b-review-woman .b-review-human{
+	    width: 400px;
+    	height: 695px;
+	}
+	.b-review{
+		padding: 20px 20px 27px 37px;
+	}
+		.b-review h3{
+			font-size: 24px;
+		}
+    	.b-review p{
+    		font-size: 18px;
+    		line-height: 30px;
+    	}
 }
