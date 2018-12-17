@@ -1176,6 +1176,9 @@ input[type="date"]{
 				vertical-align: middle;
 				box-shadow: 0 25px 35px 0 rgba(57,54,80,0.19);
 			}
+			.mobile-guide{
+				display: none;
+			}
 				.b-guide-photo{
 					background-repeat: no-repeat;
 					background-size: cover;
@@ -1194,12 +1197,12 @@ input[type="date"]{
 						margin-left: 107px;
 					}
 					.b-guide-man .b-guide-photo{
-						background-image: url(../i/man-guide.png);
+						background-image: url(../i/man-guide-min.png);
 						width: 348px;
 						height: 538px;
 					}
 					.b-guide-woman .b-guide-photo{
-						background-image: url(../i/woman-guide.png);
+						background-image: url(../i/woman-guide-min.png);
 						width: 365px;
 						height: 537px;
 					}
@@ -1272,7 +1275,7 @@ input[type="date"]{
 			-o-transition: filter .5s;
 			transition: filter .5s;
 		}
-		.b-slick .slick-slide:not(.slick-current){
+		.b-slick .gray{
 			filter: grayscale(1);
 		}
 		.b-slick img{
@@ -1288,21 +1291,23 @@ input[type="date"]{
 			}
 			.photo-arrow.slick-prev{
 				left: calc(50% - 1453px);
+				background-color: rgba(0,0,0,0.15);
 			}
-				.photo-arrow.slick-prev:hover{
-					background-color: rgba(0,0,0,0.15);
-				}
 			.photo-arrow.slick-next{
 				left: calc(50% + 483px);
+				background-color: rgba(0,0,0,0.15);
 			}
 				.photo-arrow.slick-next:hover{
-					background-color: rgba(0,0,0,0.15);
+					background-color: rgba(0,0,0,0.55);
 				}
 			.photo-arrow.slick-prev:before{
 			    left: calc(100% - 50px);
 				top: 50%;
 				background-image: url('../i/left-arrow-photo.svg');
 			}
+				.photo-arrow.slick-prev:hover{
+					background-color: rgba(0,0,0,0.55);
+				}
 			.photo-arrow.slick-next:before{
 			    right: calc(100% - 50px);
 				top: 50%;
@@ -1315,15 +1320,15 @@ input[type="date"]{
 .b-4-3{
 	padding-top: 110px;
 	background-image: url('../i/back4-3.jpg');
-	background-size: cover;
-	background-position: 50% 40px;
+    background-size: auto;
+    background-position: 50% 100%;
 	background-repeat: no-repeat;
 }
 	.b-4-3 h2{
 		margin-bottom: 42px;
 	}
 	.b-review-container{
-		
+		position: relative;
 	}
 		.b-review-slick{
 
@@ -1338,21 +1343,28 @@ input[type="date"]{
 					background-repeat: no-repeat;
 					vertical-align: middle;
 					margin-right: 13px;
+					position: relative;
 				}
 				.b-review-man .b-review-human{
-					width: 610px;
-					height: 1080px;
-					background-image: url('../i/review-man.png');
+				    width: 555px;
+    				height: 813px;
+					background-image: url('../i/review-man-min.png');
+				}
+				.b-review-man-2 .b-review-human{
+				    width: 555px;
+    				height: 813px;
+					background-image: url('../i/review-man-2-min.png');
 				}
 				.b-review-woman .b-review-human{
-					width: 610px;
-					height: 1080px;
-					background-image: url('../i/review-woman.png');
+					width: 555px;
+    				height: 813px;
+					background-image: url('../i/review-woman-min.png');
 				}
 				.b-review-block{
 					width: 520px;
 					display: inline-block;
 					vertical-align: middle;
+					margin-bottom: 130px;
 				}
 					.b-review{
 						background-color: #fff;
@@ -1366,10 +1378,14 @@ input[type="date"]{
 							border-radius: 100%;
 							display: inline-block; 
 							vertical-align: middle;
-							margin-right: 24px;
+							margin-right: 18px;
 						}
 						.b-review-man .b-review-photo{
 							background-image: url('../i/man-small-photo.jpg');
+						    background-position: 37% 42%;
+						}
+						.b-review-man-2 .b-review-photo{
+							background-image: url('../i/man-small-photo-2.jpg');
 						    background-position: 37% 42%;
 						}
 						.b-review-woman .b-review-photo{
@@ -1378,7 +1394,7 @@ input[type="date"]{
 						}
 						.b-review h3{
 							font-family: MuseoSansCyrl-900;
-							font-size: 32px;
+							font-size: 28px;
 							color: #373737;
 							display: inline-block;
 							vertical-align: middle;
@@ -1386,15 +1402,15 @@ input[type="date"]{
 						}
 						.b-review p{
 							font-family: MuseoSansCyrl-300;
-							font-size: 24px;
+							font-size: 18px;
 							color: #373737;
-							line-height: 42px;
+							line-height: 30px;
 							margin-top: 22px;
 						}
-					.b-review-item .b-btn{
-						margin-top: 74px;
+					.b-review-container .b-btn{
+						/*margin-top: 74px;*/
 						background-color: #fff;
-						padding: 25px 88px 25px 51px;
+						padding: 25px 74px 25px 41px;
 						font-size: 28px;
 						color: #4A4A4A;
 						text-align: center;
@@ -1404,9 +1420,11 @@ input[type="date"]{
 					    -ms-transition: background-color 150ms ease-out, box-shadow 150ms ease-out;
 					    -o-transition: background-color 150ms ease-out, box-shadow 150ms ease-out;
 					    transition: background-color 150ms ease-out, box-shadow 150ms ease-out;
-					    position: relative;
+					    position: absolute;
+			            bottom: 106px;
+					    right: -480px;
 					}
-					.b-review-item .b-btn:after{
+					.b-review-container .b-btn:after{
 						content: '';
 						position: absolute;
 						background-image: url('../i/review-arrow.svg');
@@ -1414,16 +1432,27 @@ input[type="date"]{
 						height: 28px;
 					    right: 42px;
 					}
-					.b-review-item .b-btn:hover{
+					.b-review-container .b-btn:hover{
 						box-shadow: 0px 0px 0px 15px rgba(0,0,0,0.10);
 					}
 .b-5{
 	padding-top: 90px;
 	padding-bottom: 34px;
-	background-image: url(../i/back4.jpg);
+	background-image: url(../i/logo-big.svg);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: auto;
 	background-position: 50% 60px;
+	position: relative;
+}
+.b-5:before{
+	content: "";
+	background-image: url(../i/gradient.png);
+	width: 100%;
+	height: 424px;
+	background-repeat: repeat-x;
+	position: absolute;
+	bottom: 0;
+	left: 0;
 }
 	.b-5 .b-not-quiz{
 		display: inline-block;
@@ -1788,13 +1817,20 @@ input[type="date"]{
 	.b-4-3{
 		padding-top: 80px;
 	}
+	.b-review-man-2 .b-review-human{
+        width: 420px;
+    	height: 618px;
+	}
 	.b-review-man .b-review-human{
-        width: 400px;
-    	height: 695px;
+        width: 420px;
+    	height: 618px;
 	}
 	.b-review-woman .b-review-human{
-	    width: 400px;
-    	height: 695px;
+        width: 420px;
+    	height: 618px;
+	}
+	.b-review-container .b-btn{
+		bottom: 35px;
 	}
 	.b-review{
 		padding: 20px 20px 27px 37px;

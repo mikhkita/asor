@@ -703,12 +703,29 @@ h3.b-main-advantage {
 			margin-top: 14px;
 			margin-bottom: 14px;
 		}
+.desktop-guide{
+	display: none;
+}
+.mobile-guide{
+	display: inline-block;
+}
+.b-guides-container{
+	margin-top: 37px;
+}
+.b-guide{
+	margin-bottom: 25px;
+}
 .b-guide-circle{
-	width: 122px;
-	height: 122px;
+    width: 112px;
+    height: 112px;
+    vertical-align: middle;
 }
 	.b-guide-man{
 		margin-right: 12px;
+	}
+	.b-guide-woman{
+	    margin-left: 21px;
+    	margin-right: 0;
 	}
 		.b-guide-man .b-guide-photo{
 			width: 87px;
@@ -721,6 +738,15 @@ h3.b-main-advantage {
 .b-guide-info{
 	width: 100%;
 }
+	.b-guide-woman-title.b-guide-info-title{
+		text-align: right;	
+	    width: 188px;
+	}
+	.b-guide-info-title{
+		display: inline-block;
+		width: 198px;
+		vertical-align: middle;
+	}
 	.b-guide h2{
 		font-size: 24px;
 		line-height: 28px;
@@ -734,18 +760,73 @@ h3.b-main-advantage {
 		line-height: 28px;
 	}
 .b-slick img{
-	width: 100%;
+	width: 376px;
 }
+	.b-4-2 h2{
+		font-size: 32px;
+		line-height: 36px;
+	}
+	.b-4-2 h3{
+		font-size: 22px;
+		line-height: 30px;
+	}
 
+.b-4-3{
+	overflow:hidden;
+	background-image: url('../i/back4-3-mobile.jpg');
+    background-size: cover;
+}
+.b-4-3 h2{
+	margin-bottom: 100px;
+}
+	.b-review-container{
+		padding-bottom: 36px;
+	}
+		.b-review-human{
+			position: absolute;
+			bottom: 50%;
+			right: 50%;
+			-webkit-transform: translate(50%, 50%);
+			-ms-transform: translate(50%, 50%);
+			-o-transform: translate(50%, 50%);
+			transform: translate(50%, 50%);
+			z-index: -1;
+		}
+		.b-review-block{
+			width: 100%;
+			margin-bottom: 0;
+		}
+			.b-review{
+				padding: 13px 17px 14px 17px;
+				background-color: rgba(255,255,255,0.9);
+			}
+				.b-review-photo{
+					width: 46px;
+					height: 46px;
+				    background-size: cover;
+				}
+					.b-review h3{
+						font-size: 18px;
+						line-height: 24px;
+					}
+					.b-review p{
+						font-size: 16px;
+						line-height: 24px;
+						margin-top: 8px;
+					}
+			.b-review-container .b-btn{
+				display: none;
+			}
 
 .b-5{
-	padding-top: 0px;
+	padding-top: 26px;
 	padding-bottom: 35px;
-	background-image: url(../i/back-m.jpg);
-	background-position: 50% 0%;
-	background-repeat: no-repeat;
-	background-size: cover;
+    background-size: contain;
+    background-position: 50% 100px;
 }
+	.b-5:before{
+		height: 219px;
+	}
 	.b-5 .b-not-quiz{
 		display: none;
 	}
@@ -762,7 +843,7 @@ h3.b-main-advantage {
 	    background-image: url(../i/gradient-2.png);
 	    display: inline-block;
 	    left: 0px;
-	    z-index: 10;
+	    z-index: -10;
 	}
 	.b-5 .b-radio label:before{
 		left: 10px;
