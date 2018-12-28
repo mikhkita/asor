@@ -501,6 +501,9 @@ input[type="date"]{
 .b-text-popup{
 	max-width: 820px;
 }
+.b-popup-app .b-popup-close{
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.55) 60%, transparent 0%);
+}
 .b-popup-close{
 	font-size: 20px;
 	padding-right: 1px;
@@ -512,12 +515,14 @@ input[type="date"]{
 	background-repeat: repeat-x;
 	position: absolute;
 	right: 32px;
-	top: 24px;
-						
+	top: 24px;			
 }
 	.is-desktop .b-popup-close:hover{
 		color: #373737;
 		background-image: none;
+	}
+	.b-popup-app .b-popup-close:hover{
+		color: #fff;
 	}
 .b-quiz-popup{
 	padding: 0px;
@@ -822,8 +827,14 @@ input[type="date"]{
 		.b-checkbox{
 			
 		}
+
+		.b-quiz-form.b-popup-app{
+		    padding-top: 56px;
+		}
+
 		.b-quiz-form .b-checkbox{
 			margin-bottom: 31px;
+			text-align: left;
 		}
 			.b-checkbox input[type="checkbox"]{
 				display: none;
@@ -880,6 +891,11 @@ input[type="date"]{
 					opacity: 1;
 				}
 			.b-quiz-form .b-btn{
+				margin-bottom: 25px;
+			}
+			.b-popup-app.b-quiz-form .b-btn{
+				width: 100%;
+				margin: 0;
 				margin-bottom: 25px;
 			}
 			.b-quiz-form small{

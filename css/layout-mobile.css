@@ -233,6 +233,11 @@ input[type="text"]{
 	width: 359px;
 	padding: 36px 24px 50px;
 }
+.b-popup-app .b-popup-close{
+	background: url('../i/mobile-cross-white.svg');
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
 .b-popup-close{
 	font-size: 0px;
 	width: 40px;
@@ -380,9 +385,6 @@ input[type="text"]{
 					.b-quiz ul li h3{
 
 					}
-		.b-quiz-form{
-
-		}
 	.b-quiz-form{
 		width: 359px;
 		margin-right: -24px;
@@ -392,6 +394,11 @@ input[type="text"]{
 		padding: 24px 24px 31px;
 		position: relative;
 		top: 2px;
+	}
+	.b-quiz-form.b-popup-app{
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		padding-top: 35px;
 	}
 		#b-popup-avia{
 			background-color: none;

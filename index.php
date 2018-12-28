@@ -300,7 +300,7 @@ $version = 3;
 			</div>
 			<h3 class="b-main-advantage">А если забронировать тур прямо сейчас, то вы не просто получите море позитива, но и <b>сэкономите 15%&nbsp;от&nbsp;стоимости&nbsp;тура.</b><p class="lol">+</p>
 			Наш тур-гид Андрей проведет для вас личную экскурсию в один из дней бесплатно!</h3>
-			<a href="#b-popup-quiz" class="b-btn b-purple-btn with-purple-border fancy"><b>Узнать подробнее</b>о том, что входит в тур</a>
+			<a href="#b-popup-app" class="b-btn b-purple-btn with-purple-border fancy"><b>Узнать подробнее</b>о том, что входит в тур</a>
 		</div>
 		<div class="b-gradient-2"></div>
 	</div>
@@ -566,6 +566,24 @@ $version = 3;
 					</div>
 				</div>
 			</form>
+		</div>
+		<div class="b-checkbox">
+					<input type="checkbox" id="avia-3" name="avia" value="Требуется подбор авиабилетов">
+					<label for="avia-3">Требуется подбор авиабилетов<span>бесплатно</span></label>
+				</div>
+		<div class="b-popup b-popup-app b-quiz-form" id="b-popup-app">
+			<h3><b>Оставьте номер вашего телефона</b> и&nbsp;мы подробно расскажем вам о туре</h3> 
+			<form action="kitsend.php" method="POST" id="b-form-avia">
+				<div class="b-inputs">
+					<input type="text" class="ym-record-keys" name="name" placeholder="Ваше имя*" required="">
+					<input type="text" class="ym-record-keys" name="phone" placeholder="Ваш телефон*" required="">
+				</div>
+				<a href="#" class="b-btn b-white-btn ajax"><b>Оставить номер</b>Мы вам перезвоним</a>
+				<input type="hidden" name="subject" value="Бронирование тура">
+				<input type="submit" style="display:none;">
+			</form>
+			<a href="#b-popup-success" class="b-thanks-link fancy fancy-binded" style="display:none;"></a>
+			<small>Отправляя запрос, вы подтверждаете <a href="https://kru-god.ru/politics/" target="_blank">согласие на&nbsp;обработку персональных данных</a></small>
 		</div>
 
 		<div class="b-popup b-quiz-popup" id="b-popup-avia" data-afterClose="quizClose">
